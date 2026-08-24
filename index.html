@@ -18,7 +18,7 @@
     <a class="brand" href="#home" aria-label="Ziqi Liu — back to top"><img src="https://github.com/Crition0502.png?size=160" alt="Ziqi Liu's GitHub avatar" width="48" height="48"></a>
     <div class="header-tools">
       <nav aria-label="Main navigation"><a href="#education" data-i18n="navEducation">Education</a><a href="#research" data-i18n="navResearch">Research</a><a href="#publications" data-i18n="navPublications">Publications</a></nav>
-      <div class="language-switch" role="group" aria-label="Language selection"><button type="button" data-lang="en" class="is-active" aria-pressed="true">EN</button><button type="button" data-lang="zh" aria-pressed="false">中文</button></div>
+      <button class="language-toggle" type="button" aria-label="Switch to Chinese">EN</button>
     </div>
   </header>
 
@@ -153,7 +153,8 @@
         footerText: '从器件到系统的研究与工程实践。'
       }
     };
-    const languageButtons = document.querySelectorAll('.language-switch button');
+    const languageToggle = document.querySelector('.language-toggle');
+    let currentLanguage = 'en';
     const setLanguage = (lang) => {
       const selected = translations[lang] ? lang : 'en';
       document.documentElement.lang = selected === 'zh' ? 'zh-CN' : 'en';
@@ -161,24 +162,21 @@
         const value = translations[selected][element.dataset.i18n];
         if (value) element.textContent = value;
       });
-      languageButtons.forEach((button) => {
-        const active = button.dataset.lang === selected;
-        button.classList.toggle('is-active', active);
-        button.setAttribute('aria-pressed', String(active));
-      });
+      currentLanguage = selected;
       const isChinese = selected === 'zh';
+      languageToggle.textContent = isChinese ? 'CN' : 'EN';
+      languageToggle.setAttribute('aria-label', isChinese ? '切换为英文' : 'Switch to Chinese');
       document.title = isChinese ? '柳子祺 | 模拟 CMOS 与集成传感' : 'Ziqi Liu | Analog CMOS & Integrated Sensing';
       document.querySelector('meta[name="description"]').content = isChinese ? '柳子祺——北京理工大学研究生，研究方向包括模拟 CMOS、MEMS 传感接口与集成传感系统。' : 'Ziqi Liu — researcher at Beijing Institute of Technology working on analog CMOS design, MEMS sensor interfaces, and integrated sensing systems.';
       backToTop.setAttribute('aria-label', isChinese ? '返回顶部' : 'Back to top');
       backToTop.title = isChinese ? '返回顶部' : 'Back to top';
-      localStorage.setItem('preferred-language', selected);
     };
-    languageButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+    languageToggle.addEventListener('click', () => setLanguage(currentLanguage === 'en' ? 'zh' : 'en'));
     const backToTop = document.querySelector('.back-to-top');
     const updateBackToTop = () => backToTop.classList.toggle('is-visible', window.scrollY > 500);
     updateBackToTop();
     window.addEventListener('scroll', updateBackToTop, { passive: true });
-    setLanguage(localStorage.getItem('preferred-language') || 'en');
+    setLanguage('en');
   </script>
 </body>
 </html>
