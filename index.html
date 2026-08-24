@@ -98,7 +98,14 @@
 
   </main>
 
+  <a class="back-to-top" href="#home" aria-label="Back to top" title="Back to top"><span aria-hidden="true">↑</span></a>
   <footer><p>© <span id="year"></span> Ziqi Liu</p><p>Research & engineering, from device to system.</p></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const backToTop = document.querySelector('.back-to-top');
+    const updateBackToTop = () => backToTop.classList.toggle('is-visible', window.scrollY > 500);
+    updateBackToTop();
+    window.addEventListener('scroll', updateBackToTop, { passive: true });
+  </script>
 </body>
 </html>
