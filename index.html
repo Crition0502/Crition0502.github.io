@@ -16,7 +16,10 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Ziqi Liu — back to top"><img src="https://github.com/Crition0502.png?size=160" alt="Ziqi Liu's GitHub avatar" width="48" height="48"></a>
-    <nav aria-label="Main navigation"><a href="#education">Education</a><a href="#research">Research</a><a href="#publications">Publications</a></nav>
+    <div class="header-tools">
+      <nav aria-label="Main navigation"><a href="#education" data-i18n="navEducation">Education</a><a href="#research" data-i18n="navResearch">Research</a><a href="#publications" data-i18n="navPublications">Publications</a></nav>
+      <div class="language-switch" role="group" aria-label="Language selection"><button type="button" data-lang="en" class="is-active" aria-pressed="true">EN</button><button type="button" data-lang="zh" aria-pressed="false">中文</button></div>
+    </div>
   </header>
 
   <main>
@@ -24,8 +27,8 @@
       <div>
         <p class="eyebrow">ANALOG CMOS · MEMS · INTEGRATED SENSING</p>
         <h1>Ziqi Liu <span class="cn-name">柳子祺</span></h1>
-        <p class="role">Graduate researcher at Beijing Institute of Technology</p>
-        <p class="lead">I work at the intersection of analog integrated circuits and MEMS sensors, building low-noise interfaces and complete sensing systems that turn physical signals into reliable, useful information.</p>
+        <p class="role" data-i18n="heroRole">Graduate researcher at Beijing Institute of Technology</p>
+        <p class="lead" data-i18n="heroLead">I work at the intersection of analog integrated circuits and MEMS sensors, building low-noise interfaces and complete sensing systems that turn physical signals into reliable, useful information.</p>
         <div class="actions">
           <a class="button primary" href="https://scholar.google.com/citations?user=_uoocIAAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a>
           <a class="button" href="https://orcid.org/0009-0001-2976-144X" target="_blank" rel="noreferrer">ORCID</a>
@@ -33,79 +36,149 @@
         </div>
       </div>
       <aside class="focus-card">
-        <p class="eyebrow">CURRENT FOCUS</p>
-        <p class="focus-statement">From sensor physics to silicon interfaces and deployable systems.</p>
-        <div class="tags"><span>Analog front-ends</span><span>MEMS–ASIC integration</span><span>Thermal flow sensing</span><span>Biomedical monitoring</span></div>
+        <p class="eyebrow" data-i18n="focusLabel">CURRENT FOCUS</p>
+        <p class="focus-statement" data-i18n="focusStatement">From sensor physics to silicon interfaces and deployable systems.</p>
+        <div class="tags"><span data-i18n="tagAfe">Analog front-ends</span><span data-i18n="tagIntegration">MEMS–ASIC integration</span><span data-i18n="tagFlow">Thermal flow sensing</span><span data-i18n="tagBio">Biomedical monitoring</span></div>
       </aside>
     </section>
 
     <section class="section education" id="education">
       <div class="section-heading">
-        <div><p class="eyebrow">EDUCATION</p><h2>Academic background.</h2></div>
-        <p>Training in electronic information engineering and integrated circuit engineering, with a focus on translating circuit fundamentals into complete sensing systems.</p>
+        <div><p class="eyebrow" data-i18n="educationLabel">EDUCATION</p><h2 data-i18n="educationTitle">Academic background.</h2></div>
+        <p data-i18n="educationIntro">Training in electronic information engineering and integrated circuit engineering, with a focus on translating circuit fundamentals into complete sensing systems.</p>
       </div>
       <div class="education-list">
         <article class="education-item">
-          <div class="education-date"><span>2025 — 2028</span><small>Expected</small></div>
+          <div class="education-date"><span>2025 — 2028</span><small data-i18n="expected">Expected</small></div>
           <div class="education-marker" aria-hidden="true"></div>
           <div class="education-content">
-            <p class="education-status">IN PROGRESS</p>
-            <h3>Master of Engineering in Integrated Circuit Engineering</h3>
-            <p class="institution">Beijing Institute of Technology</p>
-            <p>School of Integrated Circuits and Electronics · Beijing, China</p>
+            <p class="education-status" data-i18n="inProgress">IN PROGRESS</p>
+            <h3 data-i18n="mastersDegree">Master of Engineering in Integrated Circuit Engineering</h3>
+            <p class="institution" data-i18n="bit">Beijing Institute of Technology</p>
+            <p data-i18n="bitSchool">School of Integrated Circuits and Electronics · Beijing, China</p>
           </div>
         </article>
         <article class="education-item">
           <div class="education-date"><span>2021 — 2025</span></div>
           <div class="education-marker" aria-hidden="true"></div>
           <div class="education-content">
-            <h3>Bachelor of Engineering with Honors in Electronic Information Engineering</h3>
-            <p class="institution">Beijing University of Technology</p>
-            <p>Beijing, China</p>
+            <h3 data-i18n="bachelorsDegree">Bachelor of Engineering with Honors in Electronic Information Engineering</h3>
+            <p class="institution" data-i18n="bjut">Beijing University of Technology</p>
+            <p data-i18n="beijingChina">Beijing, China</p>
           </div>
         </article>
       </div>
-      <p class="education-source">Education details verified from <a href="https://orcid.org/0009-0001-2976-144X" target="_blank" rel="noreferrer">ORCID ↗</a></p>
+      <p class="education-source"><span data-i18n="educationSource">Education details verified from</span> <a href="https://orcid.org/0009-0001-2976-144X" target="_blank" rel="noreferrer">ORCID ↗</a></p>
     </section>
 
     <section class="section" id="research">
       <div class="section-heading">
-        <div><p class="eyebrow">RESEARCH</p><h2>Building the full sensing chain.</h2></div>
-        <p>My work connects circuit-level innovation with system-level validation: an integrated platform designed around real application constraints.</p>
+        <div><p class="eyebrow" data-i18n="researchLabel">RESEARCH</p><h2 data-i18n="researchTitle">Building the full sensing chain.</h2></div>
+        <p data-i18n="researchIntro">My work connects circuit-level innovation with system-level validation: an integrated platform designed around real application constraints.</p>
       </div>
       <div class="research-grid">
-        <article class="research-card"><span>01</span><h3>Analog & mixed-signal IC</h3><p>Low-noise, energy-efficient interfaces and control circuits for precision sensor readout.</p></article>
-        <article class="research-card"><span>02</span><h3>MEMS–ASIC co-design</h3><p>Co-optimizing thermal MEMS devices, interface electronics, and control strategies for higher sensitivity.</p></article>
-        <article class="research-card"><span>03</span><h3>Integrated health sensing</h3><p>Portable sensing systems and signal-processing methods for respiratory monitoring and assessment.</p></article>
+        <article class="research-card"><span>01</span><h3 data-i18n="researchOneTitle">Analog & mixed-signal IC</h3><p data-i18n="researchOneText">Low-noise, energy-efficient interfaces and control circuits for precision sensor readout.</p></article>
+        <article class="research-card"><span>02</span><h3 data-i18n="researchTwoTitle">MEMS–ASIC co-design</h3><p data-i18n="researchTwoText">Co-optimizing thermal MEMS devices, interface electronics, and control strategies for higher sensitivity.</p></article>
+        <article class="research-card"><span>03</span><h3 data-i18n="researchThreeTitle">Integrated health sensing</h3><p data-i18n="researchThreeText">Portable sensing systems and signal-processing methods for respiratory monitoring and assessment.</p></article>
       </div>
     </section>
 
     <section class="section" id="publications">
       <div class="section-heading">
-        <div><p class="eyebrow">PUBLICATIONS</p><h2>Selected work.</h2></div>
-        <a class="text-link" href="https://scholar.google.com/citations?user=_uoocIAAAAAJ&hl=en" target="_blank" rel="noreferrer">Live Google Scholar profile ↗</a>
+        <div><p class="eyebrow" data-i18n="publicationsLabel">PUBLICATIONS</p><h2 data-i18n="publicationsTitle">Selected work.</h2></div>
+        <a class="text-link" href="https://scholar.google.com/citations?user=_uoocIAAAAAJ&hl=en" target="_blank" rel="noreferrer" data-i18n="scholarProfile">Live Google Scholar profile ↗</a>
       </div>
       <article class="publication">
-        <div class="pub-meta"><b>2026</b><span>Conference paper</span></div>
-        <div><p class="venue">IEEE NEMS 2026</p><p class="award-badge"><span aria-hidden="true">★</span> Best Student Paper</p><h3>A Sensitivity-Enhanced MEMS-ASIC Integrated Thermal Flow Sensor Based on an Improved Constant Temperature Difference Control Scheme</h3><p class="authors"><strong>Ziqi Liu</strong>, Kai Qiao, Xinyuan Zhang, Xinbo Jiang, Daishan Yue, Zong Liu, Huikai Xie, Bo Wang, and Xiaoyi Wang</p><p class="note">An integrated thermal-flow sensing approach that improves system sensitivity through a refined constant-temperature-difference control scheme.</p><div class="links"><a class="text-link" href="https://doi.org/10.1109/NEMS69704.2026.11633828" target="_blank" rel="noreferrer">DOI ↗</a><a class="text-link muted" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_uoocIAAAAAJ&citation_for_view=_uoocIAAAAAJ:9yKSN-GCB0IC" target="_blank" rel="noreferrer">Scholar record</a></div></div>
+        <div class="pub-meta"><b>2026</b><span data-i18n="conferencePaper">Conference paper</span></div>
+        <div><p class="venue">IEEE NEMS 2026</p><p class="award-badge"><span aria-hidden="true">★</span> <span data-i18n="bestStudentPaper">Best Student Paper</span></p><h3>A Sensitivity-Enhanced MEMS-ASIC Integrated Thermal Flow Sensor Based on an Improved Constant Temperature Difference Control Scheme</h3><p class="authors"><strong>Ziqi Liu</strong>, Kai Qiao, Xinyuan Zhang, Xinbo Jiang, Daishan Yue, Zong Liu, Huikai Xie, Bo Wang, and Xiaoyi Wang</p><p class="note" data-i18n="nemsNote">An integrated thermal-flow sensing approach that improves system sensitivity through a refined constant-temperature-difference control scheme.</p><div class="links"><a class="text-link" href="https://doi.org/10.1109/NEMS69704.2026.11633828" target="_blank" rel="noreferrer">DOI ↗</a><a class="text-link muted" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_uoocIAAAAAJ&citation_for_view=_uoocIAAAAAJ:9yKSN-GCB0IC" target="_blank" rel="noreferrer" data-i18n="scholarRecord">Scholar record</a></div></div>
       </article>
       <article class="publication">
-        <div class="pub-meta"><b>2025</b><span>Journal article</span></div>
-        <div><p class="venue">IEEE Internet of Things Journal · 12(20), 42590–42598</p><h3>A Wireless Integrated System for COPD Monitoring Using a High-Sensitivity, Wide-Dynamic Range MEMS Flow Sensor</h3><p class="authors">Shiqian Cai, Daishan Yue, <strong>Ziqi Liu</strong>, Huikai Xie, Yajing Shen, Shihong Li, and Xiaoyi Wang</p><p class="note">A portable wireless platform combining a CMOS-compatible MEMS flow sensor with respiratory analysis for real-time COPD monitoring and spirometric assessment.</p><div class="links"><a class="text-link" href="https://doi.org/10.1109/JIOT.2025.3595198" target="_blank" rel="noreferrer">DOI ↗</a><a class="text-link muted" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_uoocIAAAAAJ&citation_for_view=_uoocIAAAAAJ:qjMakFHDy7sC" target="_blank" rel="noreferrer">Scholar record</a></div></div>
+        <div class="pub-meta"><b>2025</b><span data-i18n="journalArticle">Journal article</span></div>
+        <div><p class="venue">IEEE Internet of Things Journal · 12(20), 42590–42598</p><h3>A Wireless Integrated System for COPD Monitoring Using a High-Sensitivity, Wide-Dynamic Range MEMS Flow Sensor</h3><p class="authors">Shiqian Cai, Daishan Yue, <strong>Ziqi Liu</strong>, Huikai Xie, Yajing Shen, Shihong Li, and Xiaoyi Wang</p><p class="note" data-i18n="jiotNote">A portable wireless platform combining a CMOS-compatible MEMS flow sensor with respiratory analysis for real-time COPD monitoring and spirometric assessment.</p><div class="links"><a class="text-link" href="https://doi.org/10.1109/JIOT.2025.3595198" target="_blank" rel="noreferrer">DOI ↗</a><a class="text-link muted" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_uoocIAAAAAJ&citation_for_view=_uoocIAAAAAJ:qjMakFHDy7sC" target="_blank" rel="noreferrer" data-i18n="scholarRecord">Scholar record</a></div></div>
       </article>
-      <p class="source-note">Metadata curated from Google Scholar and verified against publisher or bibliographic records · Reviewed August 2026</p>
+      <p class="source-note" data-i18n="publicationSource">Metadata curated from Google Scholar and verified against publisher or bibliographic records · Reviewed August 2026</p>
     </section>
 
   </main>
 
   <a class="back-to-top" href="#home" aria-label="Back to top" title="Back to top"><span aria-hidden="true">↑</span></a>
-  <footer><p>© <span id="year"></span> Ziqi Liu</p><p>Research & engineering, from device to system.</p></footer>
+  <footer><p>© <span id="year"></span> Ziqi Liu</p><p data-i18n="footerText">Research & engineering, from device to system.</p></footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const translations = {
+      en: {
+        navEducation: 'Education', navResearch: 'Research', navPublications: 'Publications',
+        heroRole: 'Graduate researcher at Beijing Institute of Technology',
+        heroLead: 'I work at the intersection of analog integrated circuits and MEMS sensors, building low-noise interfaces and complete sensing systems that turn physical signals into reliable, useful information.',
+        focusLabel: 'CURRENT FOCUS', focusStatement: 'From sensor physics to silicon interfaces and deployable systems.',
+        tagAfe: 'Analog front-ends', tagIntegration: 'MEMS–ASIC integration', tagFlow: 'Thermal flow sensing', tagBio: 'Biomedical monitoring',
+        educationLabel: 'EDUCATION', educationTitle: 'Academic background.',
+        educationIntro: 'Training in electronic information engineering and integrated circuit engineering, with a focus on translating circuit fundamentals into complete sensing systems.',
+        expected: 'Expected', inProgress: 'IN PROGRESS', mastersDegree: 'Master of Engineering in Integrated Circuit Engineering',
+        bit: 'Beijing Institute of Technology', bitSchool: 'School of Integrated Circuits and Electronics · Beijing, China',
+        bachelorsDegree: 'Bachelor of Engineering with Honors in Electronic Information Engineering', bjut: 'Beijing University of Technology', beijingChina: 'Beijing, China',
+        educationSource: 'Education details verified from', researchLabel: 'RESEARCH', researchTitle: 'Building the full sensing chain.',
+        researchIntro: 'My work connects circuit-level innovation with system-level validation: an integrated platform designed around real application constraints.',
+        researchOneTitle: 'Analog & mixed-signal IC', researchOneText: 'Low-noise, energy-efficient interfaces and control circuits for precision sensor readout.',
+        researchTwoTitle: 'MEMS–ASIC co-design', researchTwoText: 'Co-optimizing thermal MEMS devices, interface electronics, and control strategies for higher sensitivity.',
+        researchThreeTitle: 'Integrated health sensing', researchThreeText: 'Portable sensing systems and signal-processing methods for respiratory monitoring and assessment.',
+        publicationsLabel: 'PUBLICATIONS', publicationsTitle: 'Selected work.', scholarProfile: 'Live Google Scholar profile ↗',
+        conferencePaper: 'Conference paper', bestStudentPaper: 'Best Student Paper', journalArticle: 'Journal article', scholarRecord: 'Scholar record',
+        nemsNote: 'An integrated thermal-flow sensing approach that improves system sensitivity through a refined constant-temperature-difference control scheme.',
+        jiotNote: 'A portable wireless platform combining a CMOS-compatible MEMS flow sensor with respiratory analysis for real-time COPD monitoring and spirometric assessment.',
+        publicationSource: 'Metadata curated from Google Scholar and verified against publisher or bibliographic records · Reviewed August 2026',
+        footerText: 'Research & engineering, from device to system.'
+      },
+      zh: {
+        navEducation: '教育经历', navResearch: '研究方向', navPublications: '发表成果',
+        heroRole: '北京理工大学研究生',
+        heroLead: '我的研究聚焦于模拟集成电路与 MEMS 传感器的交叉领域，致力于设计低噪声接口电路和完整传感系统，将物理信号转化为可靠且有价值的信息。',
+        focusLabel: '当前研究重点', focusStatement: '贯通传感机理、硅基接口与可部署系统。',
+        tagAfe: '模拟前端', tagIntegration: 'MEMS–ASIC 集成', tagFlow: '热式流量传感', tagBio: '生物医学监测',
+        educationLabel: '教育经历', educationTitle: '学术背景',
+        educationIntro: '接受电子信息工程与集成电路工程的系统训练，专注于将电路基础研究转化为完整的传感系统。',
+        expected: '预计毕业', inProgress: '在读', mastersDegree: '集成电路工程硕士',
+        bit: '北京理工大学', bitSchool: '集成电路与电子学院 · 中国北京',
+        bachelorsDegree: '电子信息工程荣誉工学学士', bjut: '北京工业大学', beijingChina: '中国北京',
+        educationSource: '教育经历由以下档案核验：', researchLabel: '研究方向', researchTitle: '构建完整传感链路',
+        researchIntro: '我的工作将电路级创新与系统级验证相结合，面向真实应用约束设计一体化传感平台。',
+        researchOneTitle: '模拟与混合信号集成电路', researchOneText: '面向精密传感器读出的低噪声、低功耗接口与控制电路。',
+        researchTwoTitle: 'MEMS–ASIC 协同设计', researchTwoText: '协同优化热式 MEMS 器件、接口电子学和控制策略，提升系统灵敏度。',
+        researchThreeTitle: '集成健康传感', researchThreeText: '用于呼吸监测与评估的便携式传感系统和信号处理方法。',
+        publicationsLabel: '发表成果', publicationsTitle: '代表性工作', scholarProfile: '查看 Google Scholar 实时档案 ↗',
+        conferencePaper: '会议论文', bestStudentPaper: '最佳学生论文', journalArticle: '期刊论文', scholarRecord: 'Scholar 记录',
+        nemsNote: '采用改进的恒温差控制方案，提高 MEMS–ASIC 集成热式流量传感系统的灵敏度。',
+        jiotNote: '将 CMOS 兼容 MEMS 流量传感器与呼吸分析相结合，用于 COPD 实时监测和肺功能评估的便携式无线系统。',
+        publicationSource: '论文元数据来自 Google Scholar，并经出版商或书目记录核验 · 2026 年 8 月更新',
+        footerText: '从器件到系统的研究与工程实践。'
+      }
+    };
+    const languageButtons = document.querySelectorAll('.language-switch button');
+    const setLanguage = (lang) => {
+      const selected = translations[lang] ? lang : 'en';
+      document.documentElement.lang = selected === 'zh' ? 'zh-CN' : 'en';
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const value = translations[selected][element.dataset.i18n];
+        if (value) element.textContent = value;
+      });
+      languageButtons.forEach((button) => {
+        const active = button.dataset.lang === selected;
+        button.classList.toggle('is-active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      const isChinese = selected === 'zh';
+      document.title = isChinese ? '柳子祺 | 模拟 CMOS 与集成传感' : 'Ziqi Liu | Analog CMOS & Integrated Sensing';
+      document.querySelector('meta[name="description"]').content = isChinese ? '柳子祺——北京理工大学研究生，研究方向包括模拟 CMOS、MEMS 传感接口与集成传感系统。' : 'Ziqi Liu — researcher at Beijing Institute of Technology working on analog CMOS design, MEMS sensor interfaces, and integrated sensing systems.';
+      backToTop.setAttribute('aria-label', isChinese ? '返回顶部' : 'Back to top');
+      backToTop.title = isChinese ? '返回顶部' : 'Back to top';
+      localStorage.setItem('preferred-language', selected);
+    };
+    languageButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
     const backToTop = document.querySelector('.back-to-top');
     const updateBackToTop = () => backToTop.classList.toggle('is-visible', window.scrollY > 500);
     updateBackToTop();
     window.addEventListener('scroll', updateBackToTop, { passive: true });
+    setLanguage(localStorage.getItem('preferred-language') || 'en');
   </script>
 </body>
 </html>
