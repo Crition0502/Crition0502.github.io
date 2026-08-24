@@ -17,6 +17,11 @@
     .contributions h4{margin:0 0 8px;color:var(--accent);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase}
     .contributions ul{margin:0;padding-left:19px;color:var(--muted);font-size:.91rem}
     .contributions li+li{margin-top:5px}
+    .education-logo-link{position:absolute;top:0;right:0;width:108px;height:108px;border-radius:50%;transition:transform .2s,filter .2s}
+    .education-logo-link .education-logo{position:static;width:100%;height:100%;margin:0}
+    .education-logo-link:hover{transform:translateY(-3px) scale(1.03);filter:brightness(1.08)}
+    @media(max-width:820px){.education-logo-link{width:96px;height:96px}}
+    @media(max-width:560px){.education-logo-link{position:static;display:block;width:78px;height:78px;margin:0 0 18px}}
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Ziqi Liu","alternateName":"柳子祺","url":"https://crition0502.github.io/","affiliation":{"@type":"CollegeOrUniversity","name":"Beijing Institute of Technology"},"sameAs":["https://scholar.google.com/citations?user=_uoocIAAAAAJ&hl=en","https://github.com/Crition0502","https://orcid.org/0009-0001-2976-144X","https://space.bilibili.com/349782502"],"knowsAbout":["Analog CMOS Design","MEMS Sensors","Sensor Interfaces","Integrated Circuits"]}
@@ -60,7 +65,7 @@
           <div class="education-date"><span>2025 — 2028</span><small data-i18n="expected">Expected</small></div>
           <div class="education-marker" aria-hidden="true"></div>
           <div class="education-content">
-            <img class="education-logo" src="assets/bit-logo.png" alt="Beijing Institute of Technology emblem" width="330" height="330" loading="lazy">
+            <a class="education-logo-link" href="https://www.bit.edu.cn/" target="_blank" rel="noreferrer" aria-label="Visit the Beijing Institute of Technology official website"><img class="education-logo" src="assets/bit-logo.png" alt="Beijing Institute of Technology emblem" width="330" height="330" loading="lazy"></a>
             <p class="education-status" data-i18n="inProgress">IN PROGRESS</p>
             <h3 data-i18n="mastersDegree">Master of Engineering in Integrated Circuit Engineering</h3>
             <p class="institution" data-i18n="bit">Beijing Institute of Technology</p>
@@ -71,7 +76,7 @@
           <div class="education-date"><span>2021 — 2025</span></div>
           <div class="education-marker" aria-hidden="true"></div>
           <div class="education-content">
-            <img class="education-logo" src="assets/bjut-logo.png" alt="Beijing University of Technology emblem" width="330" height="330" loading="lazy">
+            <a class="education-logo-link" href="https://www.bjut.edu.cn/" target="_blank" rel="noreferrer" aria-label="Visit the Beijing University of Technology official website"><img class="education-logo" src="assets/bjut-logo.png" alt="Beijing University of Technology emblem" width="330" height="330" loading="lazy"></a>
             <h3 data-i18n="bachelorsDegree">Bachelor of Engineering with Honors in Electronic Information Engineering</h3>
             <p class="institution" data-i18n="bjut">Beijing University of Technology</p>
             <p data-i18n="beijingChina">Beijing, China</p>
