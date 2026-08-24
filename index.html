@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crition0502 的个人主页">
+  <title>Crition0502 | Personal Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">Crition0502</a>
+    <nav aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#projects">项目</a>
+      <a href="https://github.com/Crition0502" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="eyebrow">WELCOME TO MY SITE</div>
+      <h1>你好，我是 <span>Crition0502</span>。</h1>
+      <p class="lead">这里记录我的研究、工程实践与持续探索。网站正在建设中，更多内容即将到来。</p>
+      <div class="actions">
+        <a class="button primary" href="#projects">查看项目</a>
+        <a class="button secondary" href="https://github.com/Crition0502" target="_blank" rel="noreferrer">访问 GitHub</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <p class="section-label">ABOUT</p>
+      <h2>关于我</h2>
+      <p>欢迎来到我的个人主页。你可以在这里介绍自己的研究方向、专业经历、兴趣以及目前正在做的事情。</p>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="section-label">SELECTED WORK</p>
+      <h2>项目与工作</h2>
+      <div class="cards">
+        <article class="card">
+          <span>01</span>
+          <h3>研究项目</h3>
+          <p>在这里添加研究主题、论文、实验结果或相关介绍。</p>
+        </article>
+        <article class="card">
+          <span>02</span>
+          <h3>工程实践</h3>
+          <p>在这里展示开源仓库、工具、芯片设计或其他工程成果。</p>
+        </article>
+        <article class="card">
+          <span>03</span>
+          <h3>学习笔记</h3>
+          <p>在这里分享技术文章、课程笔记和阶段性总结。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Crition0502 · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
