@@ -125,7 +125,7 @@
   </main>
 
   <a class="back-to-top" href="#home" aria-label="Back to top" title="Back to top"><span aria-hidden="true">↑</span></a>
-  <footer><p>© <span id="year"></span> Ziqi Liu</p><p data-i18n="footerText">Research &amp; Engineering · 从器件机理到完整系统</p><p class="visitor-count" id="visitor-count" hidden><span data-i18n="visitorsLabel">Visitors</span><strong id="busuanzi_site_uv">—</strong><span aria-hidden="true">·</span><span data-i18n="pageViewsLabel">Page views</span><strong id="busuanzi_site_pv">—</strong></p></footer>
+  <footer><p>© <span id="year"></span> Ziqi Liu</p><p data-i18n="footerText">Research &amp; Engineering · 从器件机理到完整系统</p><p class="visitor-count" id="visitor-count" hidden><span data-i18n="visitorsLabel">Visitors</span><strong id="busuanzi_site_uv">—</strong></p></footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     const translations = {
@@ -160,8 +160,7 @@
         mirContributionTwo: 'Optimized multimodal model training and the deployment pipeline for real-world operation.',
         publicationSource: 'Metadata curated from Google Scholar and ORCID, and verified against publisher or bibliographic records · Reviewed August 2026',
         footerText: 'Research & Engineering · 从器件机理到完整系统',
-        visitorsLabel: 'Visitors',
-        pageViewsLabel: 'Page views'
+        visitorsLabel: 'Visitors'
       },
       zh: {
         navEducation: '教育经历', navResearch: '研究方向', navPublications: '发表成果',
@@ -194,19 +193,16 @@
         mirContributionTwo: '优化多模态模型训练流程及面向真实场景的部署管线。',
         publicationSource: '论文元数据来自 Google Scholar 与 ORCID，并经出版商或书目记录核验 · 2026 年 8 月更新',
         footerText: 'Research & Engineering · 从器件机理到完整系统',
-        visitorsLabel: '访问人数',
-        pageViewsLabel: '访问次数'
+        visitorsLabel: '访问人数'
       }
     };
     const languageToggle = document.querySelector('.language-toggle');
     const visitorCount = document.getElementById('visitor-count');
     const visitorValue = document.getElementById('busuanzi_site_uv');
-    const pageViewValue = document.getElementById('busuanzi_site_pv');
     const revealVisitorCount = () => {
-      if (/\d/.test(visitorValue.textContent) && /\d/.test(pageViewValue.textContent)) visitorCount.hidden = false;
+      if (/\d/.test(visitorValue.textContent)) visitorCount.hidden = false;
     };
     new MutationObserver(revealVisitorCount).observe(visitorValue, {childList: true, characterData: true, subtree: true});
-    new MutationObserver(revealVisitorCount).observe(pageViewValue, {childList: true, characterData: true, subtree: true});
     revealVisitorCount();
     let currentLanguage = 'en';
     const setLanguage = (lang) => {
