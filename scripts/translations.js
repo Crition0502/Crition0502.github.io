@@ -104,7 +104,7 @@ window.siteTranslations = Object.freeze({
     secondAuthor: "（第二作者）",
     scholarRecord: "Scholar 记录",
     contributionsTitle: "个人贡献",
-    iedmNote: "一种结合堆叠式 GO 湿度传感、单片接口电路和脉冲时域复用的垂直集成 CMOS-MEMS 温湿度与流量传感器。论文已被 IEEE IEDM 2026 录取并安排报告，正式出版记录尚未上线。",
+    iedmNote: "一种温度-湿度-流速集成传感、单片接口电路和脉冲时域复用的垂直集成 CMOS-MEMS 温湿度与流量传感器。论文已被 IEEE IEDM 2026 录取并安排报告，正式出版记录尚未上线。",
     iedmContributionOne: "完成 CTD 控制电路与 ΔΣ ADC 的设计、流片及测试。",
     iedmContributionTwo: "提出面向多模态传感的脉冲时域复用方案。",
     nemsNote: "采用改进的恒温差控制方案，提高 MEMS–ASIC 集成热式流量传感系统的灵敏度。",
