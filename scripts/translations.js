@@ -60,7 +60,7 @@ window.siteTranslations = Object.freeze({
     mirNote: "A multimodal vision-and-language navigation approach that bridges visual and textual semantics for robust object navigation in real-world environments.",
     mirContributionOne: "Deployed the ROS-based system and implemented coordinated control across system modules.",
     mirContributionTwo: "Optimized multimodal model training and the deployment pipeline for real-world operation.",
-    publicationSource: "Metadata curated from Google Scholar and ORCID, and verified against publisher, bibliographic, or acceptance records · Updated September 2026",
+    publicationSource: "Metadata curated from Google Scholar and ORCID, and verified against publisher, bibliographic, or acceptance records · Updated November 2026",
     footerText: "Research & Engineering · 从器件机理到完整系统",
     visitorsLabel: "Visitors"
   },
@@ -125,7 +125,7 @@ window.siteTranslations = Object.freeze({
     mirNote: "利用多模态预训练知识连接视觉与文本语义，提升真实环境中目标导航的稳健性。",
     mirContributionOne: "完成 ROS 系统部署，并实现各功能模块的协同控制。",
     mirContributionTwo: "优化多模态模型训练流程及面向真实场景的部署管线。",
-    publicationSource: "论文元数据来自 Google Scholar 与 ORCID，并经出版商、书目或录取记录核验 · 2026 年 10 月更新",
+    publicationSource: "论文元数据来自 Google Scholar 与 ORCID，并经出版商、书目或录取记录核验 · 2026 年 11 月更新",
     footerText: "Research & Engineering · 从器件机理到完整系统",
     visitorsLabel: "访问人数"
   }
